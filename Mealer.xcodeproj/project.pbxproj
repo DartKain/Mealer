@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BA6B428B7D1CC312C0477B5 /* libPods-Mealer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0528DC4B502AC3A9BC9A5C /* libPods-Mealer.a */; };
+		6117844F2459A0B400BC7407 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6117844E2459A0B400BC7407 /* GoogleService-Info.plist */; };
+		611784512459A0FA00BC7407 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 611784502459A0FA00BC7407 /* Podfile */; };
 		6143F7592451A8DE007CA873 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6143F7582451A8DE007CA873 /* AppDelegate.swift */; };
 		6143F75B2451A8DE007CA873 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6143F75A2451A8DE007CA873 /* SceneDelegate.swift */; };
 		6143F75D2451A8DE007CA873 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6143F75C2451A8DE007CA873 /* ViewController.swift */; };
@@ -14,9 +17,14 @@
 		6143F7632451A8DE007CA873 /* Mealer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6143F7612451A8DE007CA873 /* Mealer.xcdatamodeld */; };
 		6143F7652451A8DF007CA873 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6143F7642451A8DF007CA873 /* Assets.xcassets */; };
 		6143F7682451A8DF007CA873 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6143F7662451A8DF007CA873 /* LaunchScreen.storyboard */; };
+		6143F7732452CC68007CA873 /* MealerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6143F7722452CC68007CA873 /* MealerInfo.swift */; };
+		6143F7752452D669007CA873 /* MealerBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6143F7742452D669007CA873 /* MealerBrain.swift */; };
+		6143F7772452D83F007CA873 /* IngridientsPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6143F7762452D83F007CA873 /* IngridientsPrice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6117844E2459A0B400BC7407 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		611784502459A0FA00BC7407 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		6143F7552451A8DE007CA873 /* Mealer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mealer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6143F7582451A8DE007CA873 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6143F75A2451A8DE007CA873 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +34,12 @@
 		6143F7642451A8DF007CA873 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6143F7672451A8DF007CA873 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6143F7692451A8DF007CA873 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6143F7722452CC68007CA873 /* MealerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealerInfo.swift; sourceTree = "<group>"; };
+		6143F7742452D669007CA873 /* MealerBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealerBrain.swift; sourceTree = "<group>"; };
+		6143F7762452D83F007CA873 /* IngridientsPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngridientsPrice.swift; sourceTree = "<group>"; };
+		86D6CE07F520737F04121B1B /* Pods-Mealer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mealer.release.xcconfig"; path = "Target Support Files/Pods-Mealer/Pods-Mealer.release.xcconfig"; sourceTree = "<group>"; };
+		BF0528DC4B502AC3A9BC9A5C /* libPods-Mealer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mealer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC083CE1AF344B56FC863486 /* Pods-Mealer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mealer.debug.xcconfig"; path = "Target Support Files/Pods-Mealer/Pods-Mealer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +47,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BA6B428B7D1CC312C0477B5 /* libPods-Mealer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32712647D356654C395EF844 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF0528DC4B502AC3A9BC9A5C /* libPods-Mealer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6143F74C2451A8DD007CA873 = {
 			isa = PBXGroup;
 			children = (
 				6143F7572451A8DE007CA873 /* Mealer */,
 				6143F7562451A8DE007CA873 /* Products */,
+				BCC6F9802BE03D0D8EBB814E /* Pods */,
+				32712647D356654C395EF844 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,14 +85,52 @@
 			children = (
 				6143F7582451A8DE007CA873 /* AppDelegate.swift */,
 				6143F75A2451A8DE007CA873 /* SceneDelegate.swift */,
-				6143F75C2451A8DE007CA873 /* ViewController.swift */,
-				6143F75E2451A8DE007CA873 /* Main.storyboard */,
+				6143F7712452CC1A007CA873 /* Model */,
+				6143F7702452CC10007CA873 /* View */,
+				6143F76F2452CC00007CA873 /* Controller */,
 				6143F7642451A8DF007CA873 /* Assets.xcassets */,
 				6143F7662451A8DF007CA873 /* LaunchScreen.storyboard */,
 				6143F7692451A8DF007CA873 /* Info.plist */,
 				6143F7612451A8DE007CA873 /* Mealer.xcdatamodeld */,
+				6117844E2459A0B400BC7407 /* GoogleService-Info.plist */,
+				611784502459A0FA00BC7407 /* Podfile */,
 			);
 			path = Mealer;
+			sourceTree = "<group>";
+		};
+		6143F76F2452CC00007CA873 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6143F75C2451A8DE007CA873 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6143F7702452CC10007CA873 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6143F75E2451A8DE007CA873 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6143F7712452CC1A007CA873 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6143F7722452CC68007CA873 /* MealerInfo.swift */,
+				6143F7742452D669007CA873 /* MealerBrain.swift */,
+				6143F7762452D83F007CA873 /* IngridientsPrice.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BCC6F9802BE03D0D8EBB814E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC083CE1AF344B56FC863486 /* Pods-Mealer.debug.xcconfig */,
+				86D6CE07F520737F04121B1B /* Pods-Mealer.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6143F76C2451A8DF007CA873 /* Build configuration list for PBXNativeTarget "Mealer" */;
 			buildPhases = (
+				4D1A79AA3C10CFF39BD6B402 /* [CP] Check Pods Manifest.lock */,
 				6143F7512451A8DE007CA873 /* Sources */,
 				6143F7522451A8DE007CA873 /* Frameworks */,
 				6143F7532451A8DE007CA873 /* Resources */,
+				CAB50C2CEDBB63DD2822997B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,7 +193,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				611784512459A0FA00BC7407 /* Podfile in Resources */,
 				6143F7682451A8DF007CA873 /* LaunchScreen.storyboard in Resources */,
+				6117844F2459A0B400BC7407 /* GoogleService-Info.plist in Resources */,
 				6143F7652451A8DF007CA873 /* Assets.xcassets in Resources */,
 				6143F7602451A8DE007CA873 /* Main.storyboard in Resources */,
 			);
@@ -136,11 +203,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4D1A79AA3C10CFF39BD6B402 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mealer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAB50C2CEDBB63DD2822997B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mealer/Pods-Mealer-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mealer/Pods-Mealer-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mealer/Pods-Mealer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6143F7512451A8DE007CA873 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6143F7752452D669007CA873 /* MealerBrain.swift in Sources */,
+				6143F7732452CC68007CA873 /* MealerInfo.swift in Sources */,
+				6143F7772452D83F007CA873 /* IngridientsPrice.swift in Sources */,
 				6143F75D2451A8DE007CA873 /* ViewController.swift in Sources */,
 				6143F7632451A8DE007CA873 /* Mealer.xcdatamodeld in Sources */,
 				6143F7592451A8DE007CA873 /* AppDelegate.swift in Sources */,
@@ -286,6 +398,7 @@
 		};
 		6143F76D2451A8DF007CA873 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC083CE1AF344B56FC863486 /* Pods-Mealer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,12 +411,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.gavrilovlabs.Mealer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		6143F76E2451A8DF007CA873 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86D6CE07F520737F04121B1B /* Pods-Mealer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -316,7 +430,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.gavrilovlabs.Mealer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
