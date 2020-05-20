@@ -8,17 +8,14 @@
 
 import UIKit
 import Firebase
+import RealmSwift
 
 class ViewController: UIViewController {
     
-    var cakeRecepies: [Recepies] = [
-        Recepies(n: "Сникерс", i: ["Eggs": 2, "Flour": 500, "Butter": 400, "Sugar": 400], im: #imageLiteral(resourceName: "snikersPic") ),
-        Recepies(n: "Кофейный хлопок", i: ["Eggs": 3, "Flour": 700, "Butter": 300, "Sugar": 450], im: #imageLiteral(resourceName: "coffeCottonPic")),
-        Recepies(n: "Вишня кокос", i: ["Eggs": 1, "Flour": 600, "Butter": 250, "Sugar": 250], im: #imageLiteral(resourceName: "vishniaKokos")),
-        Recepies(n: "Орео кейк", i: ["Eggs": 5, "Flour": 500, "Butter": 200, "Sugar": 350], im: #imageLiteral(resourceName: "oreoCake"))
-    ]
+    var cakeRecepies: [Recepies] = []
     
     let db = Firestore.firestore()
+    let realm = try! Realm()
     
     
     @IBOutlet weak var nachCollectionView: UICollectionView!
@@ -32,6 +29,16 @@ class ViewController: UIViewController {
         nachCollectionView.dataSource = self
         nachCollectionView.delegate = self
         nachCollectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell")
+//        do {
+//
+//            let realm = try Realm()
+//            try realm.write {
+//                realm.add(data)
+//            }
+//            print("Saved!")
+//        } catch  {
+//            print("Error saving \(error)")
+//        }
     }
     
 }

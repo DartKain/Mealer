@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import Firebase
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +22,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         let db = Firestore.firestore()
         print(db)
+        
+        do {
+           let realm = try Realm()
+        } catch  {
+            print("Error init Realm \(error)")
+        }
+        print(Realm.Configuration.defaultConfiguration.fileURL)
         return true
     }
     
