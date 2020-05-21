@@ -21,8 +21,8 @@ class CollectionViewCell: UICollectionViewCell {
         
         // Initialization code
     }
-    func setupCell(resepies: Recepies) {
-        self.nachImage.image = resepies.image
+    func setupCell(resepies: Recepie) {
+        self.nachImage.image = UIImage(named: resepies.image) 
         self.nachLabel.text = resepies.name
     }
     

@@ -8,8 +8,12 @@
 
 import Foundation
 import UIKit
+import RealmSwift
 
 class ResultViewController: UIViewController {
+    
+    @IBOutlet weak var recepieImage: UIImageView!
+    
     override func viewDidLoad() {
         
         

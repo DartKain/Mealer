@@ -16,9 +16,12 @@
 		6117845B2462D04500BC7407 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6117845A2462D04500BC7407 /* ResultViewController.swift */; };
 		612842A724756594002520DC /* Ingridients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612842A624756594002520DC /* Ingridients.swift */; };
 		612842A9247565A7002520DC /* Recepie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612842A8247565A7002520DC /* Recepie.swift */; };
+		612842AB24769C8F002520DC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612842AA24769C8F002520DC /* RegisterViewController.swift */; };
+		612842AD24769CFB002520DC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612842AC24769CFB002520DC /* WelcomeViewController.swift */; };
+		612842AF24769D3E002520DC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612842AE24769D3E002520DC /* LoginViewController.swift */; };
 		6143F7592451A8DE007CA873 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6143F7582451A8DE007CA873 /* AppDelegate.swift */; };
 		6143F75B2451A8DE007CA873 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6143F75A2451A8DE007CA873 /* SceneDelegate.swift */; };
-		6143F75D2451A8DE007CA873 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6143F75C2451A8DE007CA873 /* ViewController.swift */; };
+		6143F75D2451A8DE007CA873 /* RecepieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6143F75C2451A8DE007CA873 /* RecepieViewController.swift */; };
 		6143F7602451A8DE007CA873 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6143F75E2451A8DE007CA873 /* Main.storyboard */; };
 		6143F7632451A8DE007CA873 /* Mealer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6143F7612451A8DE007CA873 /* Mealer.xcdatamodeld */; };
 		6143F7652451A8DF007CA873 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6143F7642451A8DF007CA873 /* Assets.xcassets */; };
@@ -37,10 +40,13 @@
 		6117845A2462D04500BC7407 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		612842A624756594002520DC /* Ingridients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingridients.swift; sourceTree = "<group>"; };
 		612842A8247565A7002520DC /* Recepie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recepie.swift; sourceTree = "<group>"; };
+		612842AA24769C8F002520DC /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		612842AC24769CFB002520DC /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		612842AE24769D3E002520DC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6143F7552451A8DE007CA873 /* Mealer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mealer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6143F7582451A8DE007CA873 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6143F75A2451A8DE007CA873 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6143F75C2451A8DE007CA873 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6143F75C2451A8DE007CA873 /* RecepieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecepieViewController.swift; sourceTree = "<group>"; };
 		6143F75F2451A8DE007CA873 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6143F7622451A8DE007CA873 /* Mealer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mealer.xcdatamodel; sourceTree = "<group>"; };
 		6143F7642451A8DF007CA873 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,8 +119,11 @@
 		6143F76F2452CC00007CA873 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				6143F75C2451A8DE007CA873 /* ViewController.swift */,
+				6143F75C2451A8DE007CA873 /* RecepieViewController.swift */,
 				6117845A2462D04500BC7407 /* ResultViewController.swift */,
+				612842AA24769C8F002520DC /* RegisterViewController.swift */,
+				612842AC24769CFB002520DC /* WelcomeViewController.swift */,
+				612842AE24769D3E002520DC /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -268,14 +277,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				6143F7732452CC68007CA873 /* MealerInfo.swift in Sources */,
+				612842AB24769C8F002520DC /* RegisterViewController.swift in Sources */,
 				61178454245D6A6700BC7407 /* CollectionViewCell.swift in Sources */,
-				6143F75D2451A8DE007CA873 /* ViewController.swift in Sources */,
+				6143F75D2451A8DE007CA873 /* RecepieViewController.swift in Sources */,
 				612842A9247565A7002520DC /* Recepie.swift in Sources */,
 				6117845B2462D04500BC7407 /* ResultViewController.swift in Sources */,
 				6143F7632451A8DE007CA873 /* Mealer.xcdatamodeld in Sources */,
 				611784592462C37D00BC7407 /* Constants.swift in Sources */,
 				6143F7592451A8DE007CA873 /* AppDelegate.swift in Sources */,
+				612842AD24769CFB002520DC /* WelcomeViewController.swift in Sources */,
 				6143F75B2451A8DE007CA873 /* SceneDelegate.swift in Sources */,
+				612842AF24769D3E002520DC /* LoginViewController.swift in Sources */,
 				612842A724756594002520DC /* Ingridients.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

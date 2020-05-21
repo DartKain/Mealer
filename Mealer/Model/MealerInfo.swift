@@ -8,16 +8,7 @@
 import Foundation
 import UIKit
 
-struct Recepies {
-    let name: String
-    let ingridients: [String: Int]
-    let image: UIImage
-    init(n: String, i: [String: Int], im: UIImage) {
-        name = n
-        ingridients = i
-        image = im
-    }
-}
+
 struct NachPlate {
     let name: String
     let image: UIImage

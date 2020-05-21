@@ -10,9 +10,9 @@ import UIKit
 import Firebase
 import RealmSwift
 
-class ViewController: UIViewController {
+class RecepieViewController: UIViewController {
     
-    var cakeRecepies: [Recepies] = []
+    var cakeRecepies: Results<Recepie>?
     
     let db = Firestore.firestore()
     let realm = try! Realm()
@@ -29,6 +29,8 @@ class ViewController: UIViewController {
         nachCollectionView.dataSource = self
         nachCollectionView.delegate = self
         nachCollectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell")
+        print(realm.objects(Recepie.self))
+        cakeRecepies = realm.objects(Recepie.self)
 //        do {
 //
 //            let realm = try Realm()
@@ -43,20 +45,20 @@ class ViewController: UIViewController {
     
 }
 // MARK: - Collection Data Sourse extention
-extension ViewController: UICollectionViewDataSource {
+extension RecepieViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return cakeRecepies.count
+        return cakeRecepies?.count ?? 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = nachCollectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath as IndexPath) as! CollectionViewCell
-        let resepies = cakeRecepies[indexPath.item]
+        let resepies = cakeRecepies![indexPath.item] 
         cell.setupCell(resepies: resepies)
         return cell
     }
 }
 // MARK: - Collection Delegate extention
-extension ViewController: UICollectionViewDelegate {
+extension RecepieViewController: UICollectionViewDelegate {
 
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -66,15 +68,15 @@ extension ViewController: UICollectionViewDelegate {
 
 
         var totalPrice = 0.0
-        for ingridient in cakeRecepies[indexPath.item].ingridients {
+        for ingridients in cakeRecepies![indexPath.item].ingridientList {
             db.collection("Okey")
-                .document(ingridient.key)
+                .document(ingridients.name)
                 .getDocument() { (document, error) in
                     if let document = document, document.exists {
                         let data = document.data()
                         if let price = data!["price"] as? Double, let count = data!["count"] as? Int  {
                             let priceForOne = price / Double(count)
-                            totalPrice = totalPrice + priceForOne * Double(ingridient.value)
+                            totalPrice = totalPrice + priceForOne * Double(ingridients.count)
                             self.resultLabel.text = String(format: "%.2f руб.", totalPrice)
 
 
