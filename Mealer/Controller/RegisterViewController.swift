@@ -11,4 +11,9 @@ import UIKit
 import Firebase
 class RegisterViewController: UIViewController {
     
+    @IBAction func registerButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "registerToRecepie", sender: self)
+        
+    }
+    
 }

@@ -22,7 +22,7 @@ class RecepieViewController: UIViewController {
     
     
     
-    @IBOutlet weak var resultLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,7 +77,7 @@ extension RecepieViewController: UICollectionViewDelegate {
                         if let price = data!["price"] as? Double, let count = data!["count"] as? Int  {
                             let priceForOne = price / Double(count)
                             totalPrice = totalPrice + priceForOne * Double(ingridients.count)
-                            self.resultLabel.text = String(format: "%.2f руб.", totalPrice)
+                            
 
 
                         }
@@ -87,6 +87,7 @@ extension RecepieViewController: UICollectionViewDelegate {
             }
 
         }
+//        performSegue(withIdentifier: "goToResult", sender: self)
     }
 
 }

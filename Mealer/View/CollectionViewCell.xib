@@ -11,71 +11,57 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="Mealer" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="115" height="135"/>
+            <rect key="frame" x="0.0" y="0.0" width="165" height="180"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="115" height="135"/>
+                <rect key="frame" x="0.0" y="0.0" width="165" height="180"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1Dk-T0-ahA">
-                        <rect key="frame" x="0.0" y="0.0" width="115" height="135"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rbl-Y3-PUx">
+                        <rect key="frame" x="0.0" y="0.0" width="165" height="150"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rbl-Y3-PUx">
-                                <rect key="frame" x="0.0" y="0.0" width="115" height="109.5"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffeCottonPic" translatesAutoresizingMaskIntoConstraints="NO" id="Qtw-tA-pYG">
-                                        <rect key="frame" x="5" y="5" width="105" height="99.5"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" name="LightPurple"/>
-                                <constraints>
-                                    <constraint firstItem="Qtw-tA-pYG" firstAttribute="top" secondItem="Rbl-Y3-PUx" secondAttribute="top" constant="5" id="Rs1-CP-WUV"/>
-                                    <constraint firstAttribute="bottom" secondItem="Qtw-tA-pYG" secondAttribute="bottom" constant="5" id="VDy-r6-PYu"/>
-                                    <constraint firstItem="Qtw-tA-pYG" firstAttribute="leading" secondItem="Rbl-Y3-PUx" secondAttribute="leading" constant="5" id="rcg-r1-TAm"/>
-                                    <constraint firstAttribute="trailing" secondItem="Qtw-tA-pYG" secondAttribute="trailing" constant="5" id="zJu-XI-I0c"/>
-                                </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iDs-Zp-kGQ">
-                                <rect key="frame" x="0.0" y="114.5" width="115" height="20.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffeCottonPic" translatesAutoresizingMaskIntoConstraints="NO" id="Qtw-tA-pYG">
+                                <rect key="frame" x="5" y="0.0" width="155" height="112"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iDs-Zp-kGQ">
+                                <rect key="frame" x="31" y="116" width="115" height="20.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="LightPurple"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" name="DarkPurple"/>
+                                <color key="textColor" name="BrandLightBlue"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <color key="backgroundColor" name="BrandPurple"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="135" id="Xoe-1l-ddM"/>
-                            <constraint firstItem="Rbl-Y3-PUx" firstAttribute="leading" secondItem="1Dk-T0-ahA" secondAttribute="leading" id="lxH-8P-AEr"/>
-                            <constraint firstAttribute="width" constant="115" id="mD9-Pn-PE9"/>
-                            <constraint firstAttribute="trailing" secondItem="Rbl-Y3-PUx" secondAttribute="trailing" id="pn2-of-eUJ"/>
-                            <constraint firstItem="Rbl-Y3-PUx" firstAttribute="top" secondItem="1Dk-T0-ahA" secondAttribute="top" id="tAD-GV-2Tp"/>
+                            <constraint firstAttribute="height" constant="150" id="8vr-x5-R1S"/>
+                            <constraint firstAttribute="trailing" secondItem="Qtw-tA-pYG" secondAttribute="trailing" constant="5" id="Wnf-Rx-5h8"/>
+                            <constraint firstItem="Qtw-tA-pYG" firstAttribute="leading" secondItem="Rbl-Y3-PUx" secondAttribute="leading" constant="5" id="aik-Oj-fTD"/>
+                            <constraint firstItem="Qtw-tA-pYG" firstAttribute="top" secondItem="Rbl-Y3-PUx" secondAttribute="top" id="stQ-wR-eVJ"/>
                         </constraints>
-                    </stackView>
+                    </view>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="1Dk-T0-ahA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NdF-cT-P4q"/>
-                <constraint firstItem="1Dk-T0-ahA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Q5K-Of-Qqh"/>
-                <constraint firstAttribute="bottom" secondItem="1Dk-T0-ahA" secondAttribute="bottom" id="jZS-Ak-snJ"/>
-                <constraint firstAttribute="trailing" secondItem="1Dk-T0-ahA" secondAttribute="trailing" id="pAf-D9-9bm"/>
+                <constraint firstAttribute="trailing" secondItem="Rbl-Y3-PUx" secondAttribute="trailing" id="NId-AK-Squ"/>
+                <constraint firstItem="Rbl-Y3-PUx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TMk-2l-caO"/>
+                <constraint firstItem="Rbl-Y3-PUx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="iCG-aN-5xB"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="115" height="135"/>
+            <size key="customSize" width="165" height="180"/>
             <connections>
                 <outlet property="nachImage" destination="Qtw-tA-pYG" id="YoY-RC-DFO"/>
                 <outlet property="nachLabel" destination="iDs-Zp-kGQ" id="oF4-lv-chA"/>
             </connections>
-            <point key="canvasLocation" x="-352.89855072463769" y="3.0133928571428572"/>
+            <point key="canvasLocation" x="-316.66666666666669" y="-3.3482142857142856"/>
         </collectionViewCell>
     </objects>
     <resources>
         <image name="coffeCottonPic" width="121" height="112"/>
-        <namedColor name="DarkPurple">
-            <color red="0.25900000333786011" green="0.28200000524520874" blue="0.45500001311302185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="BrandLightBlue">
+            <color red="0.6588235294117647" green="0.84705882352941175" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="LightPurple">
-            <color red="0.86299997568130493" green="0.83899998664855957" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="BrandPurple">
+            <color red="0.66666666666666663" green="0.58823529411764708" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
